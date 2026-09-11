@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>teste</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Nike-Logo.png" alt="">
+        </div>
+        <div class="textos">
+            <h2>NEW RELEASES</h2>
+            <h2>MEN</h2>
+            <h2>WOMEN</h2>
+            <h2>KIDS</h2>
+            <h2>CUSTOMIZE</h2>
+        </div>
+        <div class="caixafinal">
+            <img src="136-1366211_group-of-10-guys-login-user-icon-png.png" alt="">
+            <img src="3081986.png" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="caixa1">
+            <h3>MEN`S SHOE</h3>
+            <h1>NIKE AIR MAX 95</h1>
+            <p>The Nike Air Max 95 takes the look of retro <br> basketball and puts it through a modern lens</p>
+            <div class="play">
+                <img src="play-button-icon-png-15.png" alt="">
+                <h3>PLAY VIDEO</h3>
+            </div>
+        </div>
+        <div class="caixa2">
+            <img id = "imagem-tenis" src="95p.png" alt="">
+        </div>
+        <div class="caixa3">
+            <div class="container1">
+                <h3>SELECT SIZE (US)</h3>
+                <div class="tamanhos">
+                    <div class="tamanho1">
+                        <p>8</p>
+                        <p>8.5</p>
+                        <p>9</p>
+                        <p>9.5</p>
+                        <p>10</p>
+                    </div>
+                    <div class="tamanho2">
+                        <p>10</p>
+                        <p>11</p>
+                        <p>11.5</p>
+                        <p>12</p>
+                        <p>12.5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container2">
+            <h3>SELECT COLOR</h3>
+                <div class="bolinhas">
+                    <div class="bolinha1" data-imagem="1522024175125703.webp"></div>
+                    <div class="bolinha2" data-imagem="95p.png"></div>
+                    <div class="bolinha3" data-imagem="95a.png"></div>
+                    <div class="bolinha4" data-imagem="95y.webp"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="bloco1">
+            <div class="prev">
+                <h3>PREV</h3>
+                <a href="index.html"><img src="109618.png" alt=""></a>
+            </div>
+            <div class="next">
+                <h3>NEXT</h3>
+                <img src="66831.png" alt="">
+            </div>
+        </div>
+        <div class="cart">
+            <h3>ADD TO CART -- $95.97</h3>
+        </div>
+    </footer>
+
+    <script>
+    const imagemTenis = document.getElementById('imagem-tenis');
+    const bolinhas = document.querySelectorAll('.bolinhas div');
+
+    bolinhas.forEach(bolinha => {
+        bolinha.addEventListener('click', () => {
+            const novaImagem = bolinha.getAttribute('data-imagem');
+            imagemTenis.src = novaImagem;
+        });
+    });
+</script>
+</body>
+</html>
